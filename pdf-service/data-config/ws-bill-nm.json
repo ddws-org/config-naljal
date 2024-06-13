@@ -180,7 +180,7 @@
                   "module": "mgramseva-common"
                 }
               },
-		    {
+              {
                 "variable": "total_bill_amount",
                 "value": {
                   "path": "PDF_STATIC_LABEL_WATER_TOTAL_BILL_AMOUNT"
@@ -192,7 +192,7 @@
                   "module": "mgramseva-common"
                 }
               },
-               {
+              {
                 "variable": "advance_adjusted_amount",
                 "value": {
                   "path": "PDF_STATIC_LABEL_WATER_ADVANCE_ADJUSTED_AMOUNT"
@@ -216,7 +216,7 @@
                   "module": "mgramseva-common"
                 }
               },
-		        {
+              {
                 "variable": "penalty_after_due_date",
                 "value": {
                   "path": "PDF_STATIC_LABEL_WATER_PENALTY_AFTER_DUE_DATE"
@@ -228,7 +228,7 @@
                   "module": "mgramseva-common"
                 }
               },
-		         {
+              {
                 "variable": "net_amount_due_with_penalty",
                 "value": {
                   "path": "PDF_STATIC_LABEL_WATER_NET_AMOUNT_DUE_WITH_PENALTY"
@@ -492,7 +492,7 @@
                   "module": "mgramseva-common"
                 }
               },
-               {
+              {
                 "variable": "GPWSC",
                 "value": {
                   "path": "$.tenantId"
@@ -532,16 +532,16 @@
                 "value": {
                   "path": "$.billDetails"
                 },
-                "type":"function",
-                "format":"var y=0,x=arguments[0];x.sort(function(a, b){return b.fromPeriod - a.fromPeriod}); return (((new Date(x[0].fromPeriod+19800000).getDate())<10?'0'+new Date(x[0].fromPeriod+19800000).getDate():new Date(x[0].fromPeriod+19800000).getDate())+'/'+((new Date(x[0].fromPeriod+19800000).getMonth()+1)<10?'0'+(new Date(x[0].fromPeriod+19800000).getMonth()+1):(new Date(x[0].fromPeriod+19800000).getMonth()+1))+'/'+new Date(x[0].fromPeriod+19800000).getFullYear())" 
+                "type": "function",
+                "format": "var y=0,x=arguments[0];x.sort(function(a, b){return b.fromPeriod - a.fromPeriod}); return (((new Date(x[0].fromPeriod+19800000).getDate())<10?'0'+new Date(x[0].fromPeriod+19800000).getDate():new Date(x[0].fromPeriod+19800000).getDate())+'/'+((new Date(x[0].fromPeriod+19800000).getMonth()+1)<10?'0'+(new Date(x[0].fromPeriod+19800000).getMonth()+1):(new Date(x[0].fromPeriod+19800000).getMonth()+1))+'/'+new Date(x[0].fromPeriod+19800000).getFullYear())"
               },
               {
                 "variable": "toPeriod",
                 "value": {
                   "path": "$.billDetails"
                 },
-                "type":"function",
-                "format":"var y=0,x=arguments[0];x.sort(function(a, b){return b.toPeriod - a.toPeriod}); return (((new Date(x[0].toPeriod+19800000).getDate())<10?('0'+new Date(x[0].toPeriod+19800000).getDate()):new Date(x[0].toPeriod+19800000).getDate())+'/'+((new Date(x[0].toPeriod+19800000).getMonth()+1)<10?('0'+(new Date(x[0].toPeriod+19800000).getMonth()+1)):(new Date(x[0].toPeriod+19800000).getMonth()+1))+'/'+new Date(x[0].toPeriod+19800000).getFullYear())" 
+                "type": "function",
+                "format": "var y=0,x=arguments[0];x.sort(function(a, b){return b.toPeriod - a.toPeriod}); return (((new Date(x[0].toPeriod+19800000).getDate())<10?('0'+new Date(x[0].toPeriod+19800000).getDate()):new Date(x[0].toPeriod+19800000).getDate())+'/'+((new Date(x[0].toPeriod+19800000).getMonth()+1)<10?('0'+(new Date(x[0].toPeriod+19800000).getMonth()+1)):(new Date(x[0].toPeriod+19800000).getMonth()+1))+'/'+new Date(x[0].toPeriod+19800000).getFullYear())"
               },
               {
                 "variable": "billIssueDate",
@@ -549,7 +549,7 @@
                   "path": "$.billDate"
                 },
                 "type": "date",
-                "format":"DD/MM/YYYY HH:mm "
+                "format": "DD/MM/YYYY HH:mm "
               },
               {
                 "variable": "billDueDate",
@@ -611,150 +611,157 @@
               {
                 "variable": "totalArrears",
                 "value": {
-                     "path":"$.billDetails"                              
+                  "path": "$.billDetails"
                 },
-                "type":"function",
-                "format":"var y=0,x=arguments[0];x.sort(function(a, b){return b.fromPeriod - a.fromPeriod});for( var i=1;i<x.length;i++){y=y+x[i].amount;} return y;" 
-              },{
+                "type": "function",
+                "format": "var y=0,x=arguments[0];x.sort(function(a, b){return b.fromPeriod - a.fromPeriod});for( var i=1;i<x.length;i++){y=y+x[i].amount;} return y;"
+              },
+              {
                 "variable": "arrears",
                 "value": {
-                     "path":"$.billDetails"                              
+                  "path": "$.billDetails"
                 },
-                "type":"function",
-                "format":"var y=[],x=arguments[0];x.sort(function(a, b){return b.fromPeriod - a.fromPeriod});for( var i=1;i<x.length;i++){ x[i].amount=x[i].amount<0?0:x[i].amount; y.push({'text':(((new Date(x[i].fromPeriod+19800000).getDate())<10?('0'+new Date(x[i].fromPeriod+19800000).getDate()):new Date(x[i].fromPeriod+19800000).getDate())+'/'+((new Date(x[i].fromPeriod+19800000).getMonth()+1)<10?('0'+(new Date(x[i].fromPeriod+19800000).getMonth()+1)):(new Date(x[i].fromPeriod+19800000).getMonth()+1))+'/'+new Date(x[i].fromPeriod+19800000).getFullYear())+' - '+(((new Date(x[i].toPeriod+19800000).getDate())<10?('0'+new Date(x[i].toPeriod+19800000).getDate()):new Date(x[i].toPeriod).getDate())+'/'+((new Date(x[i].toPeriod+19800000).getMonth()+1)<10?('0'+(new Date(x[i].toPeriod+19800000).getMonth()+1)):(new Date(x[i].toPeriod+19800000).getMonth()+1))+'/'+new Date(x[i].toPeriod+19800000).getFullYear()),'value':'₹  '+x[i].amount});} return y;" 
-              },{
+                "type": "function",
+                "format": "var y=[],x=arguments[0];x.sort(function(a, b){return b.fromPeriod - a.fromPeriod});for( var i=1;i<x.length;i++){ x[i].amount=x[i].amount<0?0:x[i].amount; y.push({'text':(((new Date(x[i].fromPeriod+19800000).getDate())<10?('0'+new Date(x[i].fromPeriod+19800000).getDate()):new Date(x[i].fromPeriod+19800000).getDate())+'/'+((new Date(x[i].fromPeriod+19800000).getMonth()+1)<10?('0'+(new Date(x[i].fromPeriod+19800000).getMonth()+1)):(new Date(x[i].fromPeriod+19800000).getMonth()+1))+'/'+new Date(x[i].fromPeriod+19800000).getFullYear())+' - '+(((new Date(x[i].toPeriod+19800000).getDate())<10?('0'+new Date(x[i].toPeriod+19800000).getDate()):new Date(x[i].toPeriod).getDate())+'/'+((new Date(x[i].toPeriod+19800000).getMonth()+1)<10?('0'+(new Date(x[i].toPeriod+19800000).getMonth()+1)):(new Date(x[i].toPeriod+19800000).getMonth()+1))+'/'+new Date(x[i].toPeriod+19800000).getFullYear()),'value':'₹  '+x[i].amount});} return y;"
+              },
+              {
                 "variable": "ws_charge",
                 "value": {
-                     "path":"$.billDetails"                              
+                  "path": "$.billDetails"
                 },
-                "type":"function",
-                "format":"var y=[],x=arguments[0];x.sort(function(a, b){return b.fromPeriod - a.fromPeriod}); return x[0].amount;" 
+                "type": "function",
+                "format": "var y=[],x=arguments[0];x.sort(function(a, b){return b.fromPeriod - a.fromPeriod}); return x[0].amount;"
               }
             ]
           },
           {
             "derived": [
               {
-                "variable":"waterquality_rate_value",
-                "formula":"'{{waterquality_rate}}'=='NA'? 'NA' : '{{waterquality_rate}}/5'"
-              },{
-               "variable":"watersupply_rate_value",
-               "formula":"('{{watersupply_rate}}' =='NA' || {{watersupply_rate}} ==0 )? 'NA' : '{{watersupply_rate}}/5'"
-             },{
-               "variable":"supplyregula_rate_value",
-               "formula":"'{{supplyregula_rate}}'=='NA' ? 'NA' : '{{supplyregula_rate}}/5'"
-             },
+                "variable": "waterquality_rate_value",
+                "formula": "'{{waterquality_rate}}'=='NA'? 'NA' : '{{waterquality_rate}}/5'"
+              },
               {
-              "variable":"address",
-              "formula":"['{{doorHouseNo}}', '{{streetName}}', '{{mohalla}}'].filter(x=>x != 'NA').join(', ')"
-            },
+                "variable": "watersupply_rate_value",
+                "formula": "('{{watersupply_rate}}' =='NA' || {{watersupply_rate}} ==0 )? 'NA' : '{{watersupply_rate}}/5'"
+              },
               {
-            "variable":"advanceAdjustedAmount",
-            "formula":"{{advanceAdjustedAmountOneTax}}=={{advanceAdjustedAmountOne}}?0:{{advanceAdjustedAmountOne}}-{{advanceAdjustedAmountTwo}}"
-          },
-		    {
-            "variable":"ws_charge_amt",
-            "formula":"{{ws_charge}}==0.00?-{{advanceAdjustedAmount}}:{{ws_charge}}"
-          },
-		    {
-            "variable":"totalArrear",
-            "formula":"{{totalArrears}}<0?0:{{totalArrears}}"
-          },
-		    {
-            "variable":"totalBillAmount",
-            "formula":"{{ws_charge_amt}} + {{totalArrear}}"
-          },
-        {
-                  "variable":"netAmountDue",
-                  "formula":"{{totalBillAmount}}+{{advanceAdjustedAmount}}"
-                },
-        {
-                  "variable":"netAmountDueWithPenalty",
-                  "formula":"{{netAmountDue}}+{{totalApplicablePenalty}}"
-                },
-		    {
-                  "variable":"penaltyDueDate",
-                  "formula":"{{billExpiry}}+{{demandIssuedDate}}",
-		"type":"date"
-                }
-		    
+                "variable": "supplyregula_rate_value",
+                "formula": "'{{supplyregula_rate}}'=='NA' ? 'NA' : '{{supplyregula_rate}}/5'"
+              },
+              {
+                "variable": "address",
+                "formula": "['{{doorHouseNo}}', '{{streetName}}', '{{mohalla}}'].filter(x=>x != 'NA').join(', ')"
+              },
+              {
+                "variable": "advanceAdjustedAmount",
+                "formula": "{{advanceAdjustedAmountOneTax}}=={{advanceAdjustedAmountOne}}?0:{{advanceAdjustedAmountOne}}-{{advanceAdjustedAmountTwo}}"
+              },
+              {
+                "variable": "ws_charge_amt",
+                "formula": "{{ws_charge}}==0.00?-{{advanceAdjustedAmount}}:{{ws_charge}}"
+              },
+              {
+                "variable": "totalArrear",
+                "formula": "{{totalArrears}}<0?0:{{totalArrears}}"
+              },
+              {
+                "variable": "totalBillAmount",
+                "formula": "{{ws_charge_amt}} + {{totalArrear}}"
+              },
+              {
+                "variable": "netAmountDue",
+                "formula": "{{totalBillAmount}}+{{advanceAdjustedAmount}}"
+              },
+              {
+                "variable": "netAmountDueWithPenalty",
+                "formula": "{{netAmountDue}}+{{totalApplicablePenalty}}"
+              },
+              {
+                "variable": "penaltyDueDate",
+                "formula": "{{billExpiry}}+{{demandIssuedDate}}",
+                "type": "date"
+              }
             ]
           },
           {
             "externalAPI": [
-              { 
-                "path": "http://egov-mdms-service.naljal:8080/egov-mdms-service/v1/_get",
+              {
+                "path": "http://egov-mdms-service.madhyapradesh:8080/madhyapradesh/egov-mdms-service/v1/_get",
                 "queryParam": "moduleName=tenant&masterName=tenants&tenantId={$.tenantId}&filter=%5B?(@.code=='{$.tenantId}')%5D",
                 "apiRequest": null,
-                "responseMapping":[
-                  {             
-                    "variable":"tenantaddress",
-                    "value":"$.MdmsRes.tenant.tenants[0].address"
+                "responseMapping": [
+                  {
+                    "variable": "tenantaddress",
+                    "value": "$.MdmsRes.tenant.tenants[0].address"
                   },
                   {
-                    "variable":"phoneNumber",
-                    "value":"$.MdmsRes.tenant.tenants[0].contactNumber"
+                    "variable": "phoneNumber",
+                    "value": "$.MdmsRes.tenant.tenants[0].contactNumber"
                   },
                   {
-                    "variable":"website",
-                    "value":"$.MdmsRes.tenant.tenants[0].domainUrl"
+                    "variable": "website",
+                    "value": "$.MdmsRes.tenant.tenants[0].domainUrl"
                   },
                   {
-                    "variable":"email",
-                    "value":"$.MdmsRes.tenant.tenants[0].emailId"
+                    "variable": "email",
+                    "value": "$.MdmsRes.tenant.tenants[0].emailId"
                   },
                   {
-                    "variable": "logoImage",                        
-                    "value":"$.MdmsRes.tenant.tenants[0].logoId",
-                    "type":"image"      
+                    "variable": "logoImage",
+                    "value": "$.MdmsRes.tenant.tenants[0].logoId",
+                    "type": "image"
                   },
                   {
                     "variable": "logo-header",
-                    "value":"$.MdmsRes.tenant.tenants[0].code",
-                    "localisation":{
-                      "required":true,
+                    "value": "$.MdmsRes.tenant.tenants[0].code",
+                    "localisation": {
+                      "required": true,
                       "prefix": "TENANT_TENANTS",
-                      "module":"mgramseva-common"
-                      }
+                      "module": "mgramseva-common"
+                    }
                   }
                 ]
-            },
+              },
               {
-                "path": "http://ws-services.naljal:8080/ws-services/wc/_search",
+                "path": "http://ws-services.madhyapradesh:8080/madhyapradesh/ws-services/wc/_search",
                 "queryParam": "tenantId=$.tenantId,connectionNumber=$.consumerCode",
                 "apiRequest": null,
                 "responseMapping": [
                   {
                     "variable": "meternumber",
                     "value": "$.WaterConnection[(@.length-1)].meterId"
-                  },{
+                  },
+                  {
                     "variable": "serviceType",
                     "value": "$.WaterConnection[(@.length-1)].connectionType",
-                    "localisation":{
-                      "required":true,
+                    "localisation": {
+                      "required": true,
                       "prefix": "WS",
-                      "module":"mgramseva-common"
-                      }
-                  },{
+                      "module": "mgramseva-common"
+                    }
+                  },
+                  {
                     "variable": "payerName",
                     "value": "$.WaterConnection[(@.length-1)].connectionHolders[0].name"
-                  },{
+                  },
+                  {
                     "variable": "doorHouseNo",
                     "value": "$.WaterConnection[(@.length-1)].additionalDetails.doorNo",
-                    "type":"setEmpty"
-                },
-                {
+                    "type": "setEmpty"
+                  },
+                  {
                     "variable": "streetName",
                     "value": "$.WaterConnection[(@.length-1)].additionalDetails.street",
-                    "type":"setEmpty"
-                }, {
+                    "type": "setEmpty"
+                  },
+                  {
                     "variable": "mohalla",
                     "value": "$.WaterConnection[(@.length-1)].additionalDetails.locality"
-                }
+                  }
                 ]
               },
               {
-                "path": "http://ws-services.naljal:8080/ws-services/wc/_getfeedback",
+                "path": "http://ws-services.madhyapradesh:8080/madhyapradesh/ws-services/wc/_getfeedback",
                 "queryParam": "tenantId=$.tenantId,",
                 "apiRequest": null,
                 "responseMapping": [
@@ -773,7 +780,7 @@
                 ]
               },
               {
-                "path": "http://ws-services.naljal:8080/ws-services/wc/_lastMonthSummary",
+                "path": "http://ws-services.madhyapradesh:8080/madhyapradesh/ws-services/wc/_lastMonthSummary",
                 "queryParam": "tenantId=$.tenantId,currentDate=$.billDate",
                 "apiRequest": null,
                 "responseMapping": [
@@ -796,50 +803,53 @@
                 ]
               },
               {
-              "path": "http://billing-service.naljal:8080/billing-service/demand/_history",
-              "queryParam": "tenantId=$.tenantId,consumerCode=$.consumerCode,businessService=$.businessService",
-              "apiRequest": null,
-              "responseMapping": [{
-                "variable": "advanceAdjustedAmountOne",
-                "value": "$.Demands[?(@.consumerType == 'waterConnection-advance')].demandDetails[(@.length-1)].collectionAmount"
+                "path": "http://billing-service.madhyapradesh:8080/madhyapradesh/billing-service/demand/_history",
+                "queryParam": "tenantId=$.tenantId,consumerCode=$.consumerCode,businessService=$.businessService",
+                "apiRequest": null,
+                "responseMapping": [
+                  {
+                    "variable": "advanceAdjustedAmountOne",
+                    "value": "$.Demands[?(@.consumerType == 'waterConnection-advance')].demandDetails[(@.length-1)].collectionAmount"
+                  },
+                  {
+                    "variable": "advanceAdjustedAmountTwo",
+                    "value": "$.Demands[?(@.consumerType == 'waterConnection-advance')].demandDetails[(@.length-2)].collectionAmount"
+                  },
+                  {
+                    "variable": "totalBillTaxAmount",
+                    "value": "$.Demands[(@.length-1)].demandDetails[(@.length-1)].taxAmount"
+                  },
+                  {
+                    "variable": "totalBillCollectionAmount",
+                    "value": "$.Demands[(@.length-1)].demandDetails[(@.length-1)].collectionAmount"
+                  },
+                  {
+                    "variable": "billExpiry",
+                    "value": "$.Demands[(@.length-1)].billExpiryTime"
+                  },
+                  {
+                    "variable": "demandIssuedDate",
+                    "value": "$.Demands[(@.length-1)].auditDetails.createdTime"
+                  },
+                  {
+                    "variable": "advanceAdjustedAmountOneTax",
+                    "value": "$.Demands[?(@.consumerType == 'waterConnection-advance')].demandDetails[(@.length-1)].taxAmount"
+                  }
+                ]
               },
               {
-                "variable": "advanceAdjustedAmountTwo",
-                "value": "$.Demands[?(@.consumerType == 'waterConnection-advance')].demandDetails[(@.length-2)].collectionAmount"
-              },
-              {
-                "variable": "totalBillTaxAmount",
-                "value": "$.Demands[(@.length-1)].demandDetails[(@.length-1)].taxAmount"
-              },{
-                "variable": "totalBillCollectionAmount",
-                "value": "$.Demands[(@.length-1)].demandDetails[(@.length-1)].collectionAmount"
-              },
-		{
-                "variable": "billExpiry",
-                "value": "$.Demands[(@.length-1)].billExpiryTime"
-              },
-		{
-                "variable": "demandIssuedDate",
-                "value": "$.Demands[(@.length-1)].auditDetails.createdTime"
-              },
-		{
-                "variable": "advanceAdjustedAmountOneTax",
-                "value": "$.Demands[?(@.consumerType == 'waterConnection-advance')].demandDetails[(@.length-1)].taxAmount"
-              }
-              ]
-            },
-		    {
-                "path": "http://ws-calculator.naljal:8080/ws-calculator/waterCalculator/_getPenaltyDetails",
+                "path": "http://ws-calculator.madhyapradesh:8080/madhyapradesh/ws-calculator/waterCalculator/_getPenaltyDetails",
                 "queryParam": "tenantId=$.tenantId,consumerCodes=$.consumerCode,isGetPenaltyEstimate=true",
                 "apiRequest": null,
                 "responseMapping": [
                   {
                     "variable": "totalApplicablePenalty",
                     "value": "$.Demands[(@.length-1)].demandDetails[?(@.taxHeadMasterCode == 'WS_TIME_PENALTY')].taxAmount"
-                  }]
-		    },
+                  }
+                ]
+              },
               {
-                "path": "http://echallan-services.naljal:8080/echallan-services/eChallan/v1/_lastMonthSummary",
+                "path": "http://echallan-services.madhyapradesh:8080/madhyapradesh/echallan-services/eChallan/v1/_lastMonthSummary",
                 "queryParam": "tenantId=$.tenantId,currentDate=$.billDate",
                 "apiRequest": null,
                 "responseMapping": [
@@ -859,7 +869,6 @@
                     "variable": "previousMonthYear",
                     "value": "$.LastMonthSummary.previousMonthYear"
                   }
-             
                 ]
               }
             ]

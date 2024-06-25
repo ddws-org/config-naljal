@@ -127,7 +127,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             externalUriMapping:
-              - path: http://egov-workflow-v2.madhyapradesh:8080/egov-workflow-v2/egov-wf/process/_search
+              - path: http://egov-workflow-v2.assam:8080/egov-workflow-v2/egov-wf/process/_search
                 queryParam: businessIds=$.applicationNo,history=true,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -162,7 +162,7 @@ ServiceMaps:
                 uriResponseMapping:
                   - inJsonPath: $.ProcessInstances
                     outJsonPath: $.Data.history
-              - path: http://collection-services.madhyapradesh:8080/madhyapradesh/collection-services/payments/WS/_search
+              - path: http://collection-services.assam:8080/assam/collection-services/payments/WS/_search
                 queryParam: consumerCodes=$.connectionNo,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -197,7 +197,7 @@ ServiceMaps:
                 uriResponseMapping:
                   - inJsonPath: $.Payments
                     outJsonPath: $.Data.payments
-              - path: http://billing-service.madhyapradesh:8080/madhyapradesh/billing-service/demand/_search
+              - path: http://billing-service.assam:8080/assam/billing-service/demand/_search
                 queryParam: consumerCode=$.connectionNo,tenantId=$.tenantId,businessService=WS
                 apiRequest:
                   {
@@ -344,7 +344,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             externalUriMapping:
-              - path: http://egov-workflow-v2.madhyapradesh:8080/egov-workflow-v2/egov-wf/process/_search
+              - path: http://egov-workflow-v2.assam:8080/egov-workflow-v2/egov-wf/process/_search
                 queryParam: businessIds=$.applicationNo,history=true,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -379,7 +379,7 @@ ServiceMaps:
                 uriResponseMapping:
                   - inJsonPath: $.ProcessInstances
                     outJsonPath: $.Data.history
-              - path: http://collection-services.madhyapradesh:8080/madhyapradesh/collection-services/payments/_search
+              - path: http://collection-services.assam:8080/assam/collection-services/payments/_search
                 queryParam: consumerCodes=$.connectionNo,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -540,7 +540,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             externalUriMapping:
-              - path: http://egov-workflow-v2.madhyapradesh:8080/egov-workflow-v2/egov-wf/process/_search
+              - path: http://egov-workflow-v2.assam:8080/egov-workflow-v2/egov-wf/process/_search
                 queryParam: businessIds=$.applicationNo,history=true,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -575,7 +575,7 @@ ServiceMaps:
                 uriResponseMapping:
                   - inJsonPath: $.ProcessInstances
                     outJsonPath: $.Data.history
-              - path: http://collection-services.madhyapradesh:8080/madhyapradesh/collection-services/payments/_search
+              - path: http://collection-services.assam:8080/assam/collection-services/payments/_search
                 queryParam: consumerCodes=$.connectionNo,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -733,7 +733,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             externalUriMapping:
-              - path: http://egov-workflow-v2.madhyapradesh:8080/egov-workflow-v2/egov-wf/process/_search
+              - path: http://egov-workflow-v2.assam:8080/egov-workflow-v2/egov-wf/process/_search
                 queryParam: businessIds=$.applicationNo,history=true,tenantId=$.tenantId
                 apiRequest:
                   {

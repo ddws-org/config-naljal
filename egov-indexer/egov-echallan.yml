@@ -99,7 +99,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             externalUriMapping:
-              - path: http://egov-workflow-v2.madhyapradesh:8080/egov-workflow-v2/egov-wf/process/_search
+              - path: http://egov-workflow-v2.assam:8080/egov-workflow-v2/egov-wf/process/_search
                 queryParam: businessIds=$.challanNo,history=true,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -232,7 +232,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             externalUriMapping:
-              - path: http://egov-workflow-v2.madhyapradesh:8080/egov-workflow-v2/egov-wf/process/_search
+              - path: http://egov-workflow-v2.assam:8080/egov-workflow-v2/egov-wf/process/_search
                 queryParam: businessIds=$.challanNo,history=true,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -364,7 +364,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             externalUriMapping:
-              - path: http://egov-workflow-v2.madhyapradesh:8080/egov-workflow-v2/egov-wf/process/_search
+              - path: http://egov-workflow-v2.assam:8080/egov-workflow-v2/egov-wf/process/_search
                 queryParam: businessIds=$.challanNo,history=true,tenantId=$.tenantId
                 apiRequest:
                   {

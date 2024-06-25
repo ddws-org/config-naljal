@@ -94,7 +94,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             externalUriMapping:
-              - path: http://egov-location.madhyapradesh:8080/madhyapradesh/egov-location/location/v11/boundarys/_search
+              - path: http://egov-location.assam:8080/assam/egov-location/location/v11/boundarys/_search
                 queryParam: hierarchyTypeCode=REVENUE,boundaryType=Block,codes=$.address.locality.code,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -115,7 +115,7 @@ ServiceMaps:
                 uriResponseMapping:
                   - inJsonPath: $.TenantBoundary[0].boundary[0]
                     outJsonPath: $.Data.ward
-              - path: http://egov-workflow-v2.madhyapradesh:8080/egov-workflow-v2/egov-wf/process/_search
+              - path: http://egov-workflow-v2.assam:8080/egov-workflow-v2/egov-wf/process/_search
                 queryParam: businessIds=$.acknowldgementNumber,history=true,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -151,7 +151,7 @@ ServiceMaps:
                   - inJsonPath: $.ProcessInstances
                     outJsonPath: $.Data.history
             mdmsMapping:
-              - path: http://egov-mdms-service.madhyapradesh:8080/madhyapradesh/egov-mdms-service/v1/_search
+              - path: http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_search
                 moduleName: tenant
                 masterName: tenants
                 tenantId: pb
@@ -162,7 +162,7 @@ ServiceMaps:
                 uriResponseMapping:
                   - inJsonPath: $.MdmsRes.tenant.tenants
                     outJsonPath: $.Data.tenantData
-              - path: http://egov-mdms-service.madhyapradesh:8080/madhyapradesh/egov-mdms-service/v1/_search
+              - path: http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_search
                 moduleName: PropertyTax
                 masterName: UsageCategory
                 tenantId: pb
@@ -212,7 +212,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             externalUriMapping:
-              - path: http://egov-location.madhyapradesh:8080/madhyapradesh/egov-location/location/v11/boundarys/_search
+              - path: http://egov-location.assam:8080/assam/egov-location/location/v11/boundarys/_search
                 queryParam: hierarchyTypeCode=REVENUE,boundaryType=Block,codes=$.address.locality.code,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -239,7 +239,7 @@ ServiceMaps:
                     filterMapping:
                       - variable: $locality
                         valueJsonpath: $.address.locality.code
-              - path: http://egov-workflow-v2.madhyapradesh:8080/egov-workflow-v2/egov-wf/process/_search
+              - path: http://egov-workflow-v2.assam:8080/egov-workflow-v2/egov-wf/process/_search
                 queryParam: businessIds=$.acknowldgementNumber,history=true,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -275,7 +275,7 @@ ServiceMaps:
                   - inJsonPath: $.ProcessInstances
                     outJsonPath: $.Data.history
             mdmsMapping:
-              - path: http://egov-mdms-service.madhyapradesh:8080/madhyapradesh/egov-mdms-service/v1/_search
+              - path: http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_search
                 moduleName: tenant
                 masterName: tenants
                 tenantId: pb
@@ -379,7 +379,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             externalUriMapping:
-              - path: http://egov-location.madhyapradesh:8080/madhyapradesh/egov-location/location/v11/boundarys/_search
+              - path: http://egov-location.assam:8080/assam/egov-location/location/v11/boundarys/_search
                 queryParam: hierarchyTypeCode=REVENUE,boundaryType=Block,codes=$.address.locality.code,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -400,7 +400,7 @@ ServiceMaps:
                 uriResponseMapping:
                   - inJsonPath: $.TenantBoundary[0].boundary[0]
                     outJsonPath: $.Data.ward
-              - path: http://egov-workflow-v2.madhyapradesh:8080/egov-workflow-v2/egov-wf/process/_search
+              - path: http://egov-workflow-v2.assam:8080/egov-workflow-v2/egov-wf/process/_search
                 queryParam: businessIds=$.acknowldgementNumber,history=true,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -436,7 +436,7 @@ ServiceMaps:
                   - inJsonPath: $.ProcessInstances
                     outJsonPath: $.Data.history
             mdmsMapping:
-              - path: http://egov-mdms-service.madhyapradesh:8080/madhyapradesh/egov-mdms-service/v1/_search
+              - path: http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_search
                 moduleName: tenant
                 masterName: tenants
                 tenantId: pb
@@ -447,7 +447,7 @@ ServiceMaps:
                 uriResponseMapping:
                   - inJsonPath: $.MdmsRes.tenant.tenants
                     outJsonPath: $.Data.tenantData
-              - path: http://egov-mdms-service.madhyapradesh:8080/madhyapradesh/egov-mdms-service/v1/_search
+              - path: http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_search
                 moduleName: PropertyTax
                 masterName: UsageCategory
                 tenantId: pb
@@ -497,7 +497,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             externalUriMapping:
-              - path: http://egov-location.madhyapradesh:8080/madhyapradesh/egov-location/location/v11/boundarys/_search
+              - path: http://egov-location.assam:8080/assam/egov-location/location/v11/boundarys/_search
                 queryParam: hierarchyTypeCode=REVENUE,boundaryType=Block,codes=$.address.locality.code,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -524,7 +524,7 @@ ServiceMaps:
                     filterMapping:
                       - variable: $locality
                         valueJsonpath: $.address.locality.code
-              - path: http://egov-workflow-v2.madhyapradesh:8080/egov-workflow-v2/egov-wf/process/_search
+              - path: http://egov-workflow-v2.assam:8080/egov-workflow-v2/egov-wf/process/_search
                 queryParam: businessIds=$.acknowldgementNumber,history=true,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -560,7 +560,7 @@ ServiceMaps:
                   - inJsonPath: $.ProcessInstances
                     outJsonPath: $.Data.history
             mdmsMapping:
-              - path: http://egov-mdms-service.madhyapradesh:8080/madhyapradesh/egov-mdms-service/v1/_search
+              - path: http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_search
                 moduleName: tenant
                 masterName: tenants
                 tenantId: pb
@@ -655,7 +655,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             externalUriMapping:
-              - path: http://egov-location.madhyapradesh:8080/madhyapradesh/egov-location/location/v11/boundarys/_search
+              - path: http://egov-location.assam:8080/assam/egov-location/location/v11/boundarys/_search
                 queryParam: hierarchyTypeCode=REVENUE,boundaryType=Block,codes=$.address.locality.code,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -676,7 +676,7 @@ ServiceMaps:
                 uriResponseMapping:
                   - inJsonPath: $.TenantBoundary[0].boundary[0]
                     outJsonPath: $.Data.ward
-              - path: http://egov-workflow-v2.madhyapradesh:8080/egov-workflow-v2/egov-wf/process/_search
+              - path: http://egov-workflow-v2.assam:8080/egov-workflow-v2/egov-wf/process/_search
                 queryParam: businessIds=$.acknowldgementNumber,history=true,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -712,7 +712,7 @@ ServiceMaps:
                   - inJsonPath: $.ProcessInstances
                     outJsonPath: $.Data.history
             mdmsMapping:
-              - path: http://egov-mdms-service.madhyapradesh:8080/madhyapradesh/egov-mdms-service/v1/_search
+              - path: http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_search
                 moduleName: tenant
                 masterName: tenants
                 tenantId: pb
@@ -723,7 +723,7 @@ ServiceMaps:
                 uriResponseMapping:
                   - inJsonPath: $.MdmsRes.tenant.tenants
                     outJsonPath: $.Data.tenantData
-              - path: http://egov-mdms-service.madhyapradesh:8080/madhyapradesh/egov-mdms-service/v1/_search
+              - path: http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_search
                 moduleName: PropertyTax
                 masterName: UsageCategory
                 tenantId: pb
@@ -773,7 +773,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             externalUriMapping:
-              - path: http://egov-location.madhyapradesh:8080/madhyapradesh/egov-location/location/v11/boundarys/_search
+              - path: http://egov-location.assam:8080/assam/egov-location/location/v11/boundarys/_search
                 queryParam: hierarchyTypeCode=REVENUE,boundaryType=Block,codes=$.address.locality.code,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -800,7 +800,7 @@ ServiceMaps:
                     filterMapping:
                       - variable: $locality
                         valueJsonpath: $.address.locality.code
-              - path: http://egov-workflow-v2.madhyapradesh:8080/egov-workflow-v2/egov-wf/process/_search
+              - path: http://egov-workflow-v2.assam:8080/egov-workflow-v2/egov-wf/process/_search
                 queryParam: businessIds=$.acknowldgementNumber,history=true,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -836,7 +836,7 @@ ServiceMaps:
                   - inJsonPath: $.ProcessInstances
                     outJsonPath: $.Data.history
             mdmsMapping:
-              - path: http://egov-mdms-service.madhyapradesh:8080/madhyapradesh/egov-mdms-service/v1/_search
+              - path: http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_search
                 moduleName: tenant
                 masterName: tenants
                 tenantId: pb
@@ -941,7 +941,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             externalUriMapping:
-              - path: http://egov-location.madhyapradesh:8080/madhyapradesh/egov-location/location/v11/boundarys/_search
+              - path: http://egov-location.assam:8080/assam/egov-location/location/v11/boundarys/_search
                 queryParam: hierarchyTypeCode=REVENUE,boundaryType=Block,codes=$.address.locality.code,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -962,7 +962,7 @@ ServiceMaps:
                 uriResponseMapping:
                   - inJsonPath: $.TenantBoundary[0].boundary[0]
                     outJsonPath: $.Data.ward
-              - path: http://egov-workflow-v2.madhyapradesh:8080/egov-workflow-v2/egov-wf/process/_search
+              - path: http://egov-workflow-v2.assam:8080/egov-workflow-v2/egov-wf/process/_search
                 queryParam: businessIds=$.acknowldgementNumber,history=true,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -998,7 +998,7 @@ ServiceMaps:
                   - inJsonPath: $.ProcessInstances
                     outJsonPath: $.Data.history
             mdmsMapping:
-              - path: http://egov-mdms-service.madhyapradesh:8080/madhyapradesh/egov-mdms-service/v1/_search
+              - path: http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_search
                 moduleName: tenant
                 masterName: tenants
                 tenantId: pb
@@ -1009,7 +1009,7 @@ ServiceMaps:
                 uriResponseMapping:
                   - inJsonPath: $.MdmsRes.tenant.tenants
                     outJsonPath: $.Data.tenantData
-              - path: http://egov-mdms-service.madhyapradesh:8080/madhyapradesh/egov-mdms-service/v1/_search
+              - path: http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_search
                 moduleName: PropertyTax
                 masterName: UsageCategory
                 tenantId: pb
@@ -1063,7 +1063,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             externalUriMapping:
-              - path: http://egov-location.madhyapradesh:8080/madhyapradesh/egov-location/location/v11/boundarys/_search
+              - path: http://egov-location.assam:8080/assam/egov-location/location/v11/boundarys/_search
                 queryParam: hierarchyTypeCode=REVENUE,boundaryType=Block,codes=$.address.locality.code,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -1090,7 +1090,7 @@ ServiceMaps:
                     filterMapping:
                       - variable: $locality
                         valueJsonpath: $.address.locality.code
-              - path: http://egov-workflow-v2.madhyapradesh:8080/egov-workflow-v2/egov-wf/process/_search
+              - path: http://egov-workflow-v2.assam:8080/egov-workflow-v2/egov-wf/process/_search
                 queryParam: businessIds=$.acknowldgementNumber,history=true,tenantId=$.tenantId
                 apiRequest:
                   {
@@ -1126,7 +1126,7 @@ ServiceMaps:
                   - inJsonPath: $.ProcessInstances
                     outJsonPath: $.Data.history
             mdmsMapping:
-              - path: http://egov-mdms-service.madhyapradesh:8080/madhyapradesh/egov-mdms-service/v1/_search
+              - path: http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_search
                 moduleName: tenant
                 masterName: tenants
                 tenantId: pb

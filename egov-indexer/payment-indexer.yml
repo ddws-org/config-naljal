@@ -59,7 +59,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             mdmsMapping:
-              - path: http://egov-mdms-service.madhyapradesh:8080/madhyapradesh/egov-mdms-service/v1/_search
+              - path: http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_search
                 moduleName: tenant
                 masterName: tenants
                 tenantId: pb
@@ -128,7 +128,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             mdmsMapping:
-              - path: http://egov-mdms-service.madhyapradesh:8080/madhyapradesh/egov-mdms-service/v1/_search
+              - path: http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_search
                 moduleName: tenant
                 masterName: tenants
                 tenantId: pb
@@ -197,7 +197,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             mdmsMapping:
-              - path: http://egov-mdms-service.madhyapradesh:8080/madhyapradesh/egov-mdms-service/v1/_search
+              - path: http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_search
                 moduleName: tenant
                 masterName: tenants
                 tenantId: pb

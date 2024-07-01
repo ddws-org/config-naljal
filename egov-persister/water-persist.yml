@@ -7,7 +7,7 @@ serviceMaps:
    fromTopic: save-ws-connection
    isTransaction: true
    queryMaps: 
-    - query: INSERT INTO eg_ws_connection (id, tenantid, property_id, applicationno, applicationstatus, status, connectionno, oldconnectionno,roadcuttingarea,action,roadtype, createdby, lastmodifiedby, createdtime, lastmodifiedtime, applicationtype, dateEffectiveFrom, locality, isoldapplication,additionaldetails,previousReadingDate,arrears,paymentType,penalty,advance) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);  
+    - query: INSERT INTO eg_ws_connection (id, tenantid, property_id, applicationno, applicationstatus, status, ihlDetail, sbmAccountno, schemeId, schemeName, connectionno, oldconnectionno,roadcuttingarea,action,roadtype, createdby, lastmodifiedby, createdtime, lastmodifiedtime, applicationtype, dateEffectiveFrom, locality, isoldapplication,additionaldetails,previousReadingDate,arrears,paymentType,penalty,advance) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);  
       basePath: $.WaterConnection
       jsonMaps:
         - jsonPath: $.WaterConnection.id 
@@ -21,7 +21,15 @@ serviceMaps:
         - jsonPath: $.WaterConnection.applicationStatus
 
         - jsonPath: $.WaterConnection.status
-
+        
+        - jsonPath: $.WaterConnection.ihlDetail
+        
+        - jsonPath: $.WaterConnection.sbmAccountno
+        
+        - jsonPath: $.WaterConnection.schemeId
+        
+        - jsonPath: $.WaterConnection.schemeName
+          
         - jsonPath: $.WaterConnection.connectionNo
 
         - jsonPath: $.WaterConnection.oldConnectionNo

@@ -179,7 +179,7 @@ serviceMaps:
    isTransaction: true
    queryMaps: 
    
-    - query: INSERT INTO eg_ws_connection_audit SELECT * FROM eg_ws_connection WHERE id = ?;
+    - query: INSERT INTO eg_ws_connection_audit(applicationstatus,status, connectionno,ihlDetail, sbmAccountno, schemeId, schemeName, accesIhl, oldconnectionno, action, roadCuttingArea, roadType, adhocpenalty, adhocrebate,adhocpenaltyreason, adhocpenaltycomment, adhocrebatereason, adhocrebatecomment, lastModifiedBy, lastModifiedTime,dateEffectiveFrom, locality, previousReadingDate, isoldapplication, property_id, arrears, paymentType, penalty, advance, additionaldetails)SELECT applicationstatus,status, connectionno,ihlDetail, sbmAccountno, schemeId, schemeName, accesIhl, oldconnectionno, action, roadCuttingArea, roadType, adhocpenalty, adhocrebate,adhocpenaltyreason, adhocpenaltycomment, adhocrebatereason, adhocrebatecomment, lastModifiedBy, lastModifiedTime,dateEffectiveFrom, locality, previousReadingDate, isoldapplication, property_id, arrears, paymentType, penalty, advance, additionaldetails FROM eg_ws_connection WHERE id =?;
       basePath: $.WaterConnection
       jsonMaps:
       - jsonPath: $.WaterConnection.id
@@ -469,7 +469,7 @@ serviceMaps:
    isTransaction: true
    queryMaps: 
    
-    - query: INSERT INTO eg_ws_connection_audit SELECT * FROM eg_ws_connection WHERE id = ?;
+    - query: INSERT INTO eg_ws_connection_audit(applicationstatus,status, connectionno,ihlDetail, sbmAccountno, schemeId, schemeName, accesIhl, oldconnectionno, action, roadCuttingArea, roadType, adhocpenalty, adhocrebate,adhocpenaltyreason, adhocpenaltycomment, adhocrebatereason, adhocrebatecomment, lastModifiedBy, lastModifiedTime,dateEffectiveFrom, locality, previousReadingDate, isoldapplication, property_id, arrears, paymentType, penalty, advance, additionaldetails)SELECT applicationstatus,status, connectionno,ihlDetail, sbmAccountno, schemeId, schemeName, accesIhl, oldconnectionno, action, roadCuttingArea, roadType, adhocpenalty, adhocrebate,adhocpenaltyreason, adhocpenaltycomment, adhocrebatereason, adhocrebatecomment, lastModifiedBy, lastModifiedTime,dateEffectiveFrom, locality, previousReadingDate, isoldapplication, property_id, arrears, paymentType, penalty, advance, additionaldetails FROM eg_ws_connection WHERE id =?;
       basePath: $.WaterConnection
       jsonMaps:
       - jsonPath: $.WaterConnection.id

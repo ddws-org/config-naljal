@@ -258,23 +258,13 @@ serviceMaps:
       jsonMaps:
       - jsonPath: $.WaterConnection.id
 
-    - query: UPDATE eg_ws_service SET connectionCategory=?,connectionType=?,ihlDetail=?,sbmAccountno=?,schemeId=?,schemeName=?,accesIhl=?,waterSource=?,meterId=?,meterInstallationDate=?,pipeSize=?,noOfTaps=?,proposedPipeSize=?,proposedTaps=?, initialmeterreading = ?, connectionexecutiondate = ?, detailsprovidedby = ?, estimationfileStoreId = ?, sanctionfileStoreId = ?, estimationLetterDate = ?, lastModifiedBy=?, lastModifiedTime=? WHERE connection_id=?;
+    - query: UPDATE eg_ws_service SET connectionCategory=?,connectionType=?,waterSource=?,meterId=?,meterInstallationDate=?,pipeSize=?,noOfTaps=?,proposedPipeSize=?,proposedTaps=?, initialmeterreading = ?, connectionexecutiondate = ?, detailsprovidedby = ?, estimationfileStoreId = ?, sanctionfileStoreId = ?, estimationLetterDate = ?, lastModifiedBy=?, lastModifiedTime=? WHERE connection_id=?;
       basePath: $.WaterConnection
       jsonMaps:
        
        - jsonPath: $.WaterConnection.connectionCategory
          
        - jsonPath: $.WaterConnection.connectionType
-
-       - jsonPath: $.WaterConnection.ihlDetail
-
-       - jsonPath: $.WaterConnection.sbmAccountno
-       
-       - jsonPath: $.WaterConnection.schemeId
-       
-       - jsonPath: $.WaterConnection.schemeName
-       
-       - jsonPath: $.WaterConnection.accesIhl
          
        - jsonPath: $.WaterConnection.waterSource
          
@@ -484,23 +474,13 @@ serviceMaps:
       jsonMaps:
       - jsonPath: $.WaterConnection.id
       
-    - query: UPDATE eg_ws_connection SET applicationstatus=?, status=?, ihlDetail=?, sbmAccountno=?, schemeId=?, schemeName=?, accesIhl=?, connectionno=?, action=?, lastModifiedBy=?, lastModifiedTime=?  WHERE id=?;
+    - query: UPDATE eg_ws_connection SET applicationstatus=?, status=?, connectionno=?, action=?, lastModifiedBy=?, lastModifiedTime=?  WHERE id=?;
       basePath: $.WaterConnection
       jsonMaps:
 
        - jsonPath: $.WaterConnection.applicationStatus
 
        - jsonPath: $.WaterConnection.status
-
-       - jsonPath: $.WaterConnection.ihlDetail
-
-       - jsonPath: $.WaterConnection.sbmAccountno
-
-       - jsonPath: $.WaterConnection.schemeId
-       
-       - jsonPath: $.WaterConnection.schemeName
-       
-       - jsonPath: $.WaterConnection.accesIhl
 
        - jsonPath: $.WaterConnection.connectionNo
 

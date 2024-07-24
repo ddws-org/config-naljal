@@ -484,13 +484,23 @@ serviceMaps:
       jsonMaps:
       - jsonPath: $.WaterConnection.id
       
-    - query: UPDATE eg_ws_connection SET applicationstatus=?, status=?, connectionno=?, action=?, lastModifiedBy=?, lastModifiedTime=?  WHERE id=?;
+    - query: UPDATE eg_ws_connection SET applicationstatus=?, status=?, ihlDetail=?, sbmAccountno=?, schemeId=?, schemeName=?, accesIhl=?, connectionno=?, action=?, lastModifiedBy=?, lastModifiedTime=?  WHERE id=?;
       basePath: $.WaterConnection
       jsonMaps:
 
        - jsonPath: $.WaterConnection.applicationStatus
 
        - jsonPath: $.WaterConnection.status
+
+       - jsonPath: $.WaterConnection.ihlDetail
+
+       - jsonPath: $.WaterConnection.sbmAccountno
+
+       - jsonPath: $.WaterConnection.schemeId
+       
+       - jsonPath: $.WaterConnection.schemeName
+       
+       - jsonPath: $.WaterConnection.accesIhl
 
        - jsonPath: $.WaterConnection.connectionNo
 

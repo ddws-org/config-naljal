@@ -81,7 +81,7 @@ ServiceMaps:
           - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
             moduleName: tenant
             masterName: tenants
-            tenantId: pb
+            tenantId: ka
             filter: "[?(@.code == $tenant)]"
             filterMapping:
             - variable: $tenant
@@ -92,7 +92,7 @@ ServiceMaps:
           - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
             moduleName: PropertyTax
             masterName: UsageCategory
-            tenantId: pb
+            tenantId: ka
             filter: "[?(@.code == $usageCategory)]"
             filterMapping:
             - variable: $usageCategory
@@ -149,7 +149,7 @@ ServiceMaps:
           - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
             moduleName: tenant
             masterName: tenants
-            tenantId: pb
+            tenantId: ka
             filter: "[?(@.code == $tenant)]"
             filterMapping:
             - variable: $tenant
@@ -237,7 +237,7 @@ ServiceMaps:
           - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
             moduleName: tenant
             masterName: tenants
-            tenantId: pb
+            tenantId: ka
             filter: "[?(@.code == $tenant)]"
             filterMapping:
             - variable: $tenant
@@ -248,7 +248,7 @@ ServiceMaps:
           - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
             moduleName: PropertyTax
             masterName: UsageCategory
-            tenantId: pb
+            tenantId: ka
             filter: "[?(@.code == $usageCategory)]"
             filterMapping:
             - variable: $usageCategory
@@ -305,7 +305,7 @@ ServiceMaps:
           - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
             moduleName: tenant
             masterName: tenants
-            tenantId: pb
+            tenantId: ka
             filter: "[?(@.code == $tenant)]"
             filterMapping:
             - variable: $tenant
@@ -387,7 +387,7 @@ ServiceMaps:
           - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
             moduleName: tenant
             masterName: tenants
-            tenantId: pb
+            tenantId: ka
             filter: "[?(@.code == $tenant)]"
             filterMapping:
             - variable: $tenant
@@ -398,7 +398,7 @@ ServiceMaps:
           - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
             moduleName: PropertyTax
             masterName: UsageCategory
-            tenantId: pb
+            tenantId: ka
             filter: "[?(@.code == $usageCategory)]"
             filterMapping:
             - variable: $usageCategory
@@ -455,7 +455,7 @@ ServiceMaps:
           - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
             moduleName: tenant
             masterName: tenants
-            tenantId: pb
+            tenantId: ka
             filter: "[?(@.code == $tenant)]"
             filterMapping:
             - variable: $tenant
@@ -544,7 +544,7 @@ ServiceMaps:
           - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
             moduleName: tenant
             masterName: tenants
-            tenantId: pb
+            tenantId: ka
             filter: "[?(@.code == $tenant)]"
             filterMapping:
             - variable: $tenant
@@ -555,7 +555,7 @@ ServiceMaps:
           - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
             moduleName: PropertyTax
             masterName: UsageCategory
-            tenantId: pb
+            tenantId: ka
             filter: "[?(@.code == $usageCategory)]"
             filterMapping:
             - variable: $usageCategory
@@ -616,7 +616,7 @@ ServiceMaps:
           - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
             moduleName: tenant
             masterName: tenants
-            tenantId: pb
+            tenantId: ka
             filter: "[?(@.code == $tenant)]"
             filterMapping:
             - variable: $tenant

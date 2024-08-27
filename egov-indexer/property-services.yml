@@ -78,7 +78,7 @@ ServiceMaps:
             - inJsonPath: $.ProcessInstances
               outJsonPath: $.Data.history              
           mdmsMapping:
-          - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
+          - path: http://mdms-v2:8080/uat/mdms-v2/v1/_search
             moduleName: tenant
             masterName: tenants
             tenantId: ka
@@ -89,7 +89,7 @@ ServiceMaps:
             uriResponseMapping:
             - inJsonPath: $.MdmsRes.tenant.tenants
               outJsonPath: $.Data.tenantData
-          - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
+          - path: http://mdms-v2:8080/uat/mdms-v2/v1/_search
             moduleName: PropertyTax
             masterName: UsageCategory
             tenantId: ka
@@ -146,7 +146,7 @@ ServiceMaps:
             - inJsonPath: $.ProcessInstances
               outJsonPath: $.Data.history         
           mdmsMapping:
-          - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
+          - path: http://mdms-v2:8080/uat/mdms-v2/v1/_search
             moduleName: tenant
             masterName: tenants
             tenantId: ka
@@ -234,7 +234,7 @@ ServiceMaps:
             - inJsonPath: $.ProcessInstances
               outJsonPath: $.Data.history       
           mdmsMapping:
-          - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
+          - path: http://mdms-v2:8080/uat/mdms-v2/v1/_search
             moduleName: tenant
             masterName: tenants
             tenantId: ka
@@ -245,7 +245,7 @@ ServiceMaps:
             uriResponseMapping:
             - inJsonPath: $.MdmsRes.tenant.tenants
               outJsonPath: $.Data.tenantData
-          - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
+          - path: http://mdms-v2:8080/uat/mdms-v2/v1/_search
             moduleName: PropertyTax
             masterName: UsageCategory
             tenantId: ka
@@ -302,7 +302,7 @@ ServiceMaps:
             - inJsonPath: $.ProcessInstances
               outJsonPath: $.Data.history         
           mdmsMapping:
-          - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
+          - path: http://mdms-v2:8080/uat/mdms-v2/v1/_search
             moduleName: tenant
             masterName: tenants
             tenantId: ka
@@ -384,7 +384,7 @@ ServiceMaps:
             - inJsonPath: $.ProcessInstances
               outJsonPath: $.Data.history       
           mdmsMapping:
-          - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
+          - path: http://mdms-v2:8080/uat/mdms-v2/v1/_search
             moduleName: tenant
             masterName: tenants
             tenantId: ka
@@ -395,7 +395,7 @@ ServiceMaps:
             uriResponseMapping:
             - inJsonPath: $.MdmsRes.tenant.tenants
               outJsonPath: $.Data.tenantData  
-          - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
+          - path: http://mdms-v2:8080/uat/mdms-v2/v1/_search
             moduleName: PropertyTax
             masterName: UsageCategory
             tenantId: ka
@@ -452,7 +452,7 @@ ServiceMaps:
             - inJsonPath: $.ProcessInstances
               outJsonPath: $.Data.history         
           mdmsMapping:
-          - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
+          - path: http://mdms-v2:8080/uat/mdms-v2/v1/_search
             moduleName: tenant
             masterName: tenants
             tenantId: ka
@@ -541,7 +541,7 @@ ServiceMaps:
             - inJsonPath: $.ProcessInstances
               outJsonPath: $.Data.history       
           mdmsMapping:
-          - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
+          - path: http://mdms-v2:8080/uat/mdms-v2/v1/_search
             moduleName: tenant
             masterName: tenants
             tenantId: ka
@@ -552,7 +552,7 @@ ServiceMaps:
             uriResponseMapping:
             - inJsonPath: $.MdmsRes.tenant.tenants
               outJsonPath: $.Data.tenantData  
-          - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
+          - path: http://mdms-v2:8080/uat/mdms-v2/v1/_search
             moduleName: PropertyTax
             masterName: UsageCategory
             tenantId: ka
@@ -613,7 +613,7 @@ ServiceMaps:
             - inJsonPath: $.ProcessInstances
               outJsonPath: $.Data.history         
           mdmsMapping:
-          - path: http://egov-mdms-service:8080/uat/egov-mdms-service/v1/_search
+          - path: http://mdms-v2:8080/uat/mdms-v2/v1/_search
             moduleName: tenant
             masterName: tenants
             tenantId: ka

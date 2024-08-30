@@ -188,7 +188,7 @@ serviceMaps:
       jsonMaps:
       - jsonPath: $.WaterConnection.id
       
-    - query: UPDATE eg_ws_connection SET applicationstatus=?, status=?, connectionno=?, ihlDetail=?, sbmAccountno=?, schemeId=?, schemeName=?, oldconnectionno=?,villageId=?, action=?, roadCuttingArea=?, roadType=?, adhocpenalty=?, adhocrebate=?, adhocpenaltyreason=?, adhocpenaltycomment=?, adhocrebatereason=?, adhocrebatecomment=?, lastModifiedBy=?, lastModifiedTime=?, dateEffectiveFrom=?, locality=?, previousReadingDate=?, isoldapplication=?, property_id=?, arrears=?, paymentType=?, penalty=?,advance=?, additionaldetails=? WHERE id=?;
+    - query: UPDATE eg_ws_connection SET applicationstatus=?, status=?, connectionno=?, ihlDetail=?, sbmAccountno=?, schemeId=?, schemeName=?, oldconnectionno=?,imisNumber=?,villageId=?, action=?, roadCuttingArea=?, roadType=?, adhocpenalty=?, adhocrebate=?, adhocpenaltyreason=?, adhocpenaltycomment=?, adhocrebatereason=?, adhocrebatecomment=?, lastModifiedBy=?, lastModifiedTime=?, dateEffectiveFrom=?, locality=?, previousReadingDate=?, isoldapplication=?, property_id=?, arrears=?, paymentType=?, penalty=?,advance=?, additionaldetails=? WHERE id=?;
       basePath: $.WaterConnection
       jsonMaps:
 
@@ -207,6 +207,8 @@ serviceMaps:
        - jsonPath: $.WaterConnection.schemeName
 
        - jsonPath: $.WaterConnection.oldConnectionNo
+
+       - jsonPath: $.WaterConnection.imisNumber
 
        - jsonPath: $.WaterConnection.villageId
 

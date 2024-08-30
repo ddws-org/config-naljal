@@ -21,6 +21,8 @@ ServiceMaps:
                     'status': '',
                     'connectionNo': '',
                     'oldConnectionNo': '',
+                    "imisNumber":"",
+                    "villageId":"",
                     'plumberInfo': [],
                     'roadCuttingInfo': [],
                     'connectionHolders': [],
@@ -70,6 +72,10 @@ ServiceMaps:
                 outJsonPath: $.Data.connectionNo
               - inJsonPath: $.oldConnectionNo
                 outJsonPath: $.Data.oldConnectionNo
+              - inJsonPath: $.imisNumber
+                outJsonPath: $.Data.imisNumber
+              - inJsonPath: $.villageId
+                outJsonPath: $.Data.villageId
               - inJsonPath: $.plumberInfo
                 outJsonPath: $.Data.plumberInfo
               - inJsonPath: $.roadCuttingInfo
@@ -238,6 +244,8 @@ ServiceMaps:
                     'status': '',
                     'connectionNo': '',
                     'oldConnectionNo': '',
+                    "imisNumber":"",
+                    "villageId":"",
                     'plumberInfo': [],
                     'roadCuttingInfo': [],
                     'connectionHolders': [],
@@ -287,6 +295,10 @@ ServiceMaps:
                 outJsonPath: $.Data.connectionNo
               - inJsonPath: $.oldConnectionNo
                 outJsonPath: $.Data.oldConnectionNo
+              - inJsonPath: $.imisNumber
+                outJsonPath: $.Data.imisNumber
+              - inJsonPath: $.villageId
+                outJsonPath: $.Data.villageId
               - inJsonPath: $.plumberInfo
                 outJsonPath: $.Data.plumberInfo
               - inJsonPath: $.roadCuttingInfo
@@ -434,6 +446,8 @@ ServiceMaps:
                     'status': '',
                     'connectionNo': '',
                     'oldConnectionNo': '',
+                    "imisNumber":"",
+                    "villageId":"",
                     'plumberInfo': [],
                     'roadCuttingInfo': [],
                     'connectionHolders': [],
@@ -483,6 +497,10 @@ ServiceMaps:
                 outJsonPath: $.Data.connectionNo
               - inJsonPath: $.oldConnectionNo
                 outJsonPath: $.Data.oldConnectionNo
+              - inJsonPath: $.imisNumber
+                outJsonPath: $.Data.imisNumber
+              - inJsonPath: $.villageId
+                outJsonPath: $.Data.villageId
               - inJsonPath: $.plumberInfo
                 outJsonPath: $.Data.plumberInfo
               - inJsonPath: $.roadCuttingInfo
@@ -631,6 +649,8 @@ ServiceMaps:
                     'status': '',
                     'connectionNo': '',
                     'oldConnectionNo': '',
+                    "imisNumber":"",
+                    "villageId":"",
                     'plumberInfo': [],
                     'roadCuttingInfo': [],
                     'connectionHolders': [],
@@ -678,6 +698,10 @@ ServiceMaps:
                 outJsonPath: $.Data.connectionNo
               - inJsonPath: $.oldConnectionNo
                 outJsonPath: $.Data.oldConnectionNo
+              - inJsonPath: $.imisNumber
+                outJsonPath: $.Data.imisNumber
+              - inJsonPath: $.villageId
+                outJsonPath: $.Data.villageId
               - inJsonPath: $.plumberInfo
                 outJsonPath: $.Data.plumberInfo
               - inJsonPath: $.roadCuttingInfo

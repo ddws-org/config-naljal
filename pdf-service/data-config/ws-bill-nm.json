@@ -829,7 +829,7 @@
               ]
             },
 		    {
-                "path": "http://ws-calculator.naljal:8080/ws-calculator/waterCalculator/_getPenaltyDetails",
+                "path": "http://ws-calculator.uat:8080/uat/ws-calculator/waterCalculator/_getPenaltyDetails",
                 "queryParam": "tenantId=$.tenantId,consumerCodes=$.consumerCode,isGetPenaltyEstimate=true",
                 "apiRequest": null,
                 "responseMapping": [
@@ -839,7 +839,7 @@
                   }]
 		    },
               {
-                "path": "http://echallan-services.naljal:8080/echallan-services/eChallan/v1/_lastMonthSummary",
+                "path": "http://echallan-services.uat:8080/uat/echallan-services/eChallan/v1/_lastMonthSummary",
                 "queryParam": "tenantId=$.tenantId,currentDate=$.billDate",
                 "apiRequest": null,
                 "responseMapping": [

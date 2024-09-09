@@ -11,7 +11,7 @@ ServiceMaps:
         jsonPath: $.WaterConnection
         timeStampField: $.auditDetails.createdTime
         customJsonMapping:
-          indexMapping: {"Data":{"workflow": {"state": {}, "action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","imisNumber":"","villageId":"","plumberInfo":[],"roadCuttingInfo":[],"connectionHolders":[],"roadType":"","roadCuttingArea":"","connectionExecutionDate":"","connectionCategory":"","connectionType":"","additionalDetails":{},"id":"","propertyId":"","rainWaterHarvesting":"","waterSource":"","tenantId":"","meterId":"","meterInstallationDate":"","proposedPipeSize":"","proposedTaps":"","pipeSize":"","noOfTaps":"","applicationType":"","dateEffectiveFrom":"", "previousReadingDate":"", "arrears":"","paymentType":"","penalty":"","advance":"", "@timestamp":"timestamp","history":{},"payments":{}}}
+          indexMapping: {"Data":{"workflow": {"state": {}, "action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","imisNumber":"","villageId":"","dataVerified":"","plumberInfo":[],"roadCuttingInfo":[],"connectionHolders":[],"roadType":"","roadCuttingArea":"","connectionExecutionDate":"","connectionCategory":"","connectionType":"","additionalDetails":{},"id":"","propertyId":"","rainWaterHarvesting":"","waterSource":"","tenantId":"","meterId":"","meterInstallationDate":"","proposedPipeSize":"","proposedTaps":"","pipeSize":"","noOfTaps":"","applicationType":"","dateEffectiveFrom":"", "previousReadingDate":"", "arrears":"","paymentType":"","penalty":"","advance":"", "@timestamp":"timestamp","history":{},"payments":{}}}
           fieldMapping:
           - inJsonPath: $.applicationStatus.state
             outJsonPath: $.Data.workflow.state
@@ -33,6 +33,8 @@ ServiceMaps:
             outJsonPath: $.Data.imisNumber
           - inJsonPath: $.villageId
             outJsonPath: $.Data.villageId
+          - inJsonPath: $.dataVerified
+            outJsonPath: $.Data.dataVerified
           - inJsonPath: $.plumberInfo
             outJsonPath: $.Data.plumberInfo
           - inJsonPath: $.roadCuttingInfo
@@ -119,7 +121,7 @@ ServiceMaps:
         jsonPath: $.WaterConnection
         timeStampField: $.auditDetails.lastModifiedTime
         customJsonMapping:
-          indexMapping: {"Data":{"workflow": {"state": {}, "action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","imisNumber":"","villageId":"","plumberInfo":[],"roadCuttingInfo":[],"connectionHolders":[],"roadType":"","roadCuttingArea":"","connectionExecutionDate":"","connectionCategory":"","connectionType":"","additionalDetails":{},"id":"","propertyId":"","rainWaterHarvesting":"","waterSource":"","tenantId":"","meterId":"","meterInstallationDate":"","proposedPipeSize":"","proposedTaps":"","pipeSize":"","noOfTaps":"","applicationType":"","dateEffectiveFrom":"", "previousReadingDate":"", "arrears":"","paymentType":"","penalty":"","advance":"", "@timestamp":"timestamp","history":{},"payments":{}}}
+          indexMapping: {"Data":{"workflow": {"state": {}, "action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","imisNumber":"","villageId":"","dataVerified":"","plumberInfo":[],"roadCuttingInfo":[],"connectionHolders":[],"roadType":"","roadCuttingArea":"","connectionExecutionDate":"","connectionCategory":"","connectionType":"","additionalDetails":{},"id":"","propertyId":"","rainWaterHarvesting":"","waterSource":"","tenantId":"","meterId":"","meterInstallationDate":"","proposedPipeSize":"","proposedTaps":"","pipeSize":"","noOfTaps":"","applicationType":"","dateEffectiveFrom":"", "previousReadingDate":"", "arrears":"","paymentType":"","penalty":"","advance":"", "@timestamp":"timestamp","history":{},"payments":{}}}
           fieldMapping:
           - inJsonPath: $.applicationStatus.state
             outJsonPath: $.Data.workflow.state
@@ -141,6 +143,8 @@ ServiceMaps:
             outJsonPath: $.Data.imisNumber
           - inJsonPath: $.villageId
             outJsonPath: $.Data.villageId
+          - inJsonPath: $.dataVerified
+            outJsonPath: $.Data.dataVerified
           - inJsonPath: $.plumberInfo
             outJsonPath: $.Data.plumberInfo
           - inJsonPath: $.roadCuttingInfo
@@ -220,7 +224,7 @@ ServiceMaps:
         jsonPath: $.WaterConnection
         timeStampField: $.auditDetails.lastModifiedTime
         customJsonMapping:
-          indexMapping: {"Data":{"workflow": {"state": {}, "action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","imisNumber":"","villageId":"","plumberInfo":[],"roadCuttingInfo":[],"connectionHolders":[],"roadType":"","roadCuttingArea":"","connectionExecutionDate":"","connectionCategory":"","connectionType":"","additionalDetails":{},"id":"","propertyId":"","rainWaterHarvesting":"","waterSource":"","tenantId":"","meterId":"","meterInstallationDate":"","proposedPipeSize":"","proposedTaps":"","pipeSize":"","noOfTaps":"","applicationType":"","dateEffectiveFrom":"", "previousReadingDate":"", "arrears":"","paymentType":"","penalty":"","advance":"", "@timestamp":"timestamp","history":{},"payments":{}}}
+          indexMapping: {"Data":{"workflow": {"state": {}, "action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","imisNumber":"","villageId":"","dataVerified":"","plumberInfo":[],"roadCuttingInfo":[],"connectionHolders":[],"roadType":"","roadCuttingArea":"","connectionExecutionDate":"","connectionCategory":"","connectionType":"","additionalDetails":{},"id":"","propertyId":"","rainWaterHarvesting":"","waterSource":"","tenantId":"","meterId":"","meterInstallationDate":"","proposedPipeSize":"","proposedTaps":"","pipeSize":"","noOfTaps":"","applicationType":"","dateEffectiveFrom":"", "previousReadingDate":"", "arrears":"","paymentType":"","penalty":"","advance":"", "@timestamp":"timestamp","history":{},"payments":{}}}
           fieldMapping:
           - inJsonPath: $.applicationStatus.state
             outJsonPath: $.Data.workflow.state
@@ -242,6 +246,8 @@ ServiceMaps:
             outJsonPath: $.Data.imisNumber
           - inJsonPath: $.villageId
             outJsonPath: $.Data.villageId
+          - inJsonPath: $.dataVerified
+            outJsonPath: $.Data.dataVerified
           - inJsonPath: $.plumberInfo
             outJsonPath: $.Data.plumberInfo
           - inJsonPath: $.roadCuttingInfo
@@ -322,7 +328,7 @@ ServiceMaps:
         jsonPath: $.WaterConnection.*
         timeStampField: $.auditDetails.createdTime
         customJsonMapping:
-          indexMapping: {"Data":{"workflow": {"state": {}, "action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","imisNumber":"","villageId":"","plumberInfo":[],"roadCuttingInfo":[],"connectionHolders":[],"roadType":"","roadCuttingArea":"","connectionExecutionDate":"","connectionCategory":"","connectionType":"","additionalDetails":{},"id":"","propertyId":"","rainWaterHarvesting":"","waterSource":"","tenantId":"","meterId":"","meterInstallationDate":"","proposedPipeSize":"","proposedTaps":"","pipeSize":"","noOfTaps":"","applicationType":"","dateEffectiveFrom":"", "previousReadingDate":"", "arrears":"","paymentType":"","penalty":"","advance":"", "@timestamp":"timestamp","history":{},"payments":{}}}
+          indexMapping: {"Data":{"workflow": {"state": {}, "action": "", "assignes": []},"applicationNo":"","applicationStatus":"","status":"","connectionNo":"","oldConnectionNo":"","imisNumber":"","villageId":"","dataVerified":"","plumberInfo":[],"roadCuttingInfo":[],"connectionHolders":[],"roadType":"","roadCuttingArea":"","connectionExecutionDate":"","connectionCategory":"","connectionType":"","additionalDetails":{},"id":"","propertyId":"","rainWaterHarvesting":"","waterSource":"","tenantId":"","meterId":"","meterInstallationDate":"","proposedPipeSize":"","proposedTaps":"","pipeSize":"","noOfTaps":"","applicationType":"","dateEffectiveFrom":"", "previousReadingDate":"", "arrears":"","paymentType":"","penalty":"","advance":"", "@timestamp":"timestamp","history":{},"payments":{}}}
           fieldMapping:
           - inJsonPath: $.processInstance.action
             outJsonPath: $.Data.workflow.action
@@ -342,6 +348,8 @@ ServiceMaps:
             outJsonPath: $.Data.imisNumber
           - inJsonPath: $.villageId
             outJsonPath: $.Data.villageId
+          - inJsonPath: $.dataVerified
+            outJsonPath: $.Data.dataVerified
           - inJsonPath: $.plumberInfo
             outJsonPath: $.Data.plumberInfo
           - inJsonPath: $.roadCuttingInfo

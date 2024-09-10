@@ -39,7 +39,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             mdmsMapping:
-              - path: http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_search
+              - path: http://mdms-v2:8080/assam/mdms-v2/v1/_search
                 moduleName: tenant
                 masterName: tenants
                 tenantId: pb
@@ -98,10 +98,10 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             mdmsMapping:
-              - path: http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_search
+              - path: http://mdms-v2:8080/assam/mdms-v2/v1/_search
                 moduleName: tenant
                 masterName: tenants
-                tenantId: pb
+                tenantId: as
                 filter: '[?(@.code == $tenant)]'
                 filterMapping:
                   - variable: $tenant

@@ -686,7 +686,7 @@
           {
             "externalAPI": [
               {
-                "path": "http://egov-mdms-service.assam:8080/assam/egov-mdms-service/v1/_get",
+                "path": "http://mdms-v2:8080/assam/mdms-v2/v1/_get",
                 "queryParam": "moduleName=tenant&masterName=tenants&tenantId={$.tenantId}&filter=%5B?(@.code=='{$.tenantId}')%5D",
                 "apiRequest": null,
                 "responseMapping": [

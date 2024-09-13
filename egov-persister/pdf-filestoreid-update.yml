@@ -8,7 +8,7 @@ serviceMaps:
    queryMaps:
 
 
-       - query: UPDATE eg_tl_tradelicense SET filestoreid=? WHERE id = ? 
+       - query: UPDATE assam.eg_tl_tradelicense SET filestoreid=? WHERE id = ? 
          basePath: jobs.*
          jsonMaps:
 
@@ -19,7 +19,7 @@ serviceMaps:
           - jsonPath: $.jobs.*.entityid
 
 
-       - query: UPDATE egbs_bill_v1 SET filestoreid=? WHERE id = ? 
+       - query: UPDATE assam.egbs_bill_v1 SET filestoreid=? WHERE id = ? 
          basePath: jobs.*
          jsonMaps:
 

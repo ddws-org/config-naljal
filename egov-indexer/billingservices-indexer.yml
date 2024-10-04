@@ -49,7 +49,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             mdmsMapping:
-              - path: http://mdms-v2.mgramseva:8080/mdms-v2/v1/_search
+              - path: http://mdms-v2:8080/uat/mdms-v2/v1/_search
                 moduleName: tenant
                 masterName: tenants
                 tenantId: as
@@ -108,7 +108,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             mdmsMapping:
-              - path: http://mdms-v2.mgramseva:8080/mdms-v2/v1/_search
+              - path: http://mdms-v2:8080/uat/mdms-v2/v1/_search
                 moduleName: tenant
                 masterName: tenants
                 tenantId: as
@@ -168,7 +168,7 @@ ServiceMaps:
               - inJsonPath: $.@timestamp
                 outJsonPath: $.Data.@timestamp
             mdmsMapping:
-              - path: http://mdms-v2.mgramseva:8080/mdms-v2/v1/_search
+              - path: http://mdms-v2:8080/uat/mdms-v2/v1/_search
                 moduleName: tenant
                 masterName: tenants
                 tenantId: as

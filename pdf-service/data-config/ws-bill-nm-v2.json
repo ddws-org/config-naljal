@@ -765,7 +765,7 @@
           {
             "externalAPI": [
               {
-                "path": "http://mdms-v2.mgramseva:8080/mdms-v2/v1/_get",
+                "path": "http://mdms-v2:8080/uat/mdms-v2/v1/_get",
                 "queryParam": "moduleName=tenant&masterName=tenants&tenantId={$.Bill[0].tenantId}&filter=%5B?(@.code=='{$.Bill[0].tenantId}')%5D",
                 "apiRequest": null,
                 "responseMapping":[
@@ -802,7 +802,7 @@
                 ]
               },
               {
-                "path": "http://ws-services.mgramseva:8080/ws-services/wc/_search",
+                "path": "http://ws-services.uat:8080/uat/ws-services/wc/_search",
                 "queryParam": "tenantId=$.Bill[0].tenantId,connectionNumber=$.Bill[0].consumerCode",
                 "apiRequest": null,
                 "responseMapping": [
@@ -836,7 +836,7 @@
                 ]
               },
               {
-                "path": "http://ws-services.mgramseva:8080/ws-services/wc/_getfeedback",
+                "path": "http://ws-services.uat:8080/uat/ws-services/wc/_getfeedback",
                 "queryParam": "tenantId=$.Bill[0].tenantId",
                 "apiRequest": null,
                 "responseMapping": [
@@ -855,7 +855,7 @@
                 ]
               },
               {
-                "path": "http://ws-services.mgramseva:8080/ws-services/wc/_lastMonthSummary",
+                "path": "http://ws-services.uat:8080/uat/ws-services/wc/_lastMonthSummary",
                 "queryParam": "tenantId=$.Bill[0].tenantId,currentDate=$.Bill[0].billDate",
                 "apiRequest": null,
                 "responseMapping": [
@@ -878,7 +878,7 @@
                 ]
               },
               {
-                "path": "http://billing-service.mgramseva:8080/billing-service/demand/_history",
+                "path": "http://billing-service:8080/uat/billing-service/demand/_history",
                 "queryParam": "tenantId=$.Bill[0].tenantId,consumerCode=$.Bill[0].consumerCode,businessService=$.Bill[0].businessService",
                 "apiRequest": null,
                 "responseMapping": [{
@@ -908,7 +908,7 @@
                 ]
               },
               {
-                "path": "http://echallan-services.mgramseva:8080/echallan-services/eChallan/v1/_lastMonthSummary",
+                "path": "http://echallan-services.uat:8080/uat/echallan-services/eChallan/v1/_lastMonthSummary",
                 "queryParam": "tenantId=$.Bill[0].tenantId,currentDate=$.Bill[0].billDate",
                 "apiRequest": null,
                 "responseMapping": [

@@ -736,7 +736,7 @@
                 ]
                 },
               {
-                "path": "http://echallan-services.uat:8080/echallan-services/eChallan/v1/_lastMonthSummary",
+                "path": "http://echallan-services.uat:8080/uat/echallan-services/eChallan/v1/_lastMonthSummary",
                 "queryParam": "tenantId=$.tenantId,currentDate=$.transactionDate",
                 "apiRequest": null,
                 "responseMapping": [
